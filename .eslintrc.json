@@ -34,7 +34,14 @@
       "warn",
       "never"
     ],
-    "import/extensions": ["error", "never"],
+    "import/extensions": [
+      "error",
+      {
+        "js": "never",
+        "ts": "never",
+        "json": "always"
+      }
+    ],
     "lines-between-class-members": "off",
     "no-mixed-spaces-and-tabs": "error",
     // Disabled to prevent double error reporting from the eslint
@@ -46,7 +53,14 @@
       "warn",
       "never"
     ],
-    "@typescript-eslint/no-use-before-define": ["error"],
-    "@typescript-eslint/no-unused-vars": ["error", { "args": "after-used" }]
+    "@typescript-eslint/no-use-before-define": [
+      "error"
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "args": "after-used"
+      }
+    ]
   }
 }

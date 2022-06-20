@@ -17,6 +17,7 @@
       "node": {
         "extensions": [
           ".ts",
+          ".js",
           ".d.ts"
         ]
       }
